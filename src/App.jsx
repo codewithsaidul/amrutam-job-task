@@ -1,3 +1,5 @@
+import Navbar from "./component/Navbar"
+
  
 
 function App() {
@@ -5,8 +7,9 @@ function App() {
 
   return (
     <>
+        <Navbar />
 
-      <h1 className="text-5xl text-rose-500">This is My First Job Task</h1>
+        <main className="px-4 sm:px-8 md:px-16 lg:px-28 mx-auto"></main>
     </>
   )
 }
