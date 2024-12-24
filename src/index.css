@@ -4,3 +4,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@layer utilities {
+    .desktop__banner {
+        @apply bg-desk-banner bg-no-repeat bg-cover bg-center z-0
+    }
+    .mobile-banner {
+        @apply bg-mobile-banner bg-no-repeat bg-cover bg-center z-0
+    }
+}
