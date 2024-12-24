@@ -1,4 +1,5 @@
 import Hero from "./component/Hero"
+import HeroFooter from "./component/HeroFooter"
 import Navbar from "./component/Navbar"
 
  
@@ -12,6 +13,7 @@ function App() {
 
         <main className="">
           <Hero />
+          <HeroFooter />
         </main>
     </>
   )
