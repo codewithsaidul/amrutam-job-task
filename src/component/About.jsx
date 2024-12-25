@@ -16,7 +16,7 @@ const About = () => {
       </div>
 
       {/* ============== about container ========================= */}
-      <div className="grid grid-cols-1  lg:grid-cols-3 gap-20 mt-20">
+      <div className="grid grid-cols-1  lg:grid-cols-3 gap-20 my-20">
         {/* about container left side */}
         <div className="hidden lg:flex flex-col gap-5">
           {features.slice(0, 3).map((feature, index) => (
@@ -29,11 +29,11 @@ const About = () => {
                   {feature.description}
                 </p>
               </div>
-              <figure className="py-5 px-6 bg-[#EDF5FA] rounded-full">
+              <figure className="p-5 bg-[#EDF5FA] rounded-full">
                 <img
                   src={feature.icon}
                   alt={feature.title}
-                  className="w-16 h-16"
+                  className="w-8 h-8"
                 />
               </figure>
             </div>
@@ -51,11 +51,11 @@ const About = () => {
         <div className="hidden lg:flex flex-col gap-5">
           {features.slice(3, 6).map((feature, index) => (
             <div key={index} className="flex items-center gap-2">
-              <figure className="py-5 px-6 bg-[#EDF5FA] rounded-full">
+              <figure className="p-5 bg-[#EDF5FA] rounded-full">
                 <img
                   src={feature.icon}
                   alt={feature.title}
-                  className="w-16 h-16"
+                  className="w-8 h-8"
                 />
               </figure>
               <div>
