@@ -16,9 +16,9 @@ const About = () => {
       </div>
 
       {/* ============== about container ========================= */}
-      <div className="grid grid-cols-3 gap-20 mt-20">
+      <div className="grid grid-cols-1  lg:grid-cols-3 gap-20 mt-20">
         {/* about container left side */}
-        <div className="flex flex-col gap-5">
+        <div className="hidden lg:flex flex-col gap-5">
           {features.slice(0, 3).map((feature, index) => (
             <div key={index} className="flex items-center gap-2">
               <div>
@@ -41,17 +41,57 @@ const About = () => {
         </div>
 
         {/* about container center */}
-        <div className="relative">
-          <figure> 
-            <img src="/assets/about/about-bg.png" alt="about bg" />
-          </figure>
-
-          <figure className="absolute top-12 left-5">
-            <img src="/assets/about/about-men.png" alt="about women" className="w-[350px] h-[350px]" />
+        <div className="relative mx-auto">
+          <figure>
+            <img src="/assets/about/about.png" alt="" />
           </figure>
         </div>
 
-        
+        {/* about container right side */}
+        <div className="hidden lg:flex flex-col gap-5">
+          {features.slice(3, 6).map((feature, index) => (
+            <div key={index} className="flex items-center gap-2">
+              <figure className="py-5 px-6 bg-[#EDF5FA] rounded-full">
+                <img
+                  src={feature.icon}
+                  alt={feature.title}
+                  className="w-16 h-16"
+                />
+              </figure>
+              <div>
+                <h4 className="text-black text-xl font-bold mb-2">
+                  {feature.title}
+                </h4>
+                <p className="text-base text-[#515151] font-normal">
+                  {feature.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* about container 6 item for mobile device */}
+          <div className="grid grid-cols-2 gap-6 lg:hidden">
+            {features.map((feature, index) => (
+              <div key={index} className="flex flex-col items-center gap-2 border-2 py-4 px-3 text-center rounded-xl">
+                <div className="order-2">
+                  <h4 className="text-black text-base sm:text-xl font-bold mb-2">
+                    {feature.title}
+                  </h4>
+                  <p className="text-[12px] sm:text-base text-[#515151] font-normal">
+                    {feature.description}
+                  </p>
+                </div>
+                <figure className="p-5 bg-[#EDF5FA] rounded-full order-1">
+                  <img
+                    src={feature.icon}
+                    alt={feature.title}
+                    className="w-10 h-10"
+                  />
+                </figure>
+              </div>
+            ))}
+          </div>
       </div>
     </div>
   );
