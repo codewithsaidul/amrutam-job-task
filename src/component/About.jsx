@@ -22,8 +22,12 @@ const About = () => {
           {features.slice(0, 3).map((feature, index) => (
             <div key={index} className="flex items-center gap-2">
               <div>
-                <h4 className="text-black text-xl font-bold mb-2">{feature.title}</h4>
-                <p className="text-base text-[#515151] font-normal">{feature.description}</p>
+                <h4 className="text-black text-xl font-bold mb-2">
+                  {feature.title}
+                </h4>
+                <p className="text-base text-[#515151] font-normal">
+                  {feature.description}
+                </p>
               </div>
               <figure className="py-5 px-6 bg-[#EDF5FA] rounded-full">
                 <img
@@ -37,6 +41,17 @@ const About = () => {
         </div>
 
         {/* about container center */}
+        <div className="relative">
+          <figure> 
+            <img src="/assets/about/about-bg.png" alt="about bg" />
+          </figure>
+
+          <figure className="absolute top-12 left-5">
+            <img src="/assets/about/about-men.png" alt="about women" className="w-[350px] h-[350px]" />
+          </figure>
+        </div>
+
+        
       </div>
     </div>
   );
