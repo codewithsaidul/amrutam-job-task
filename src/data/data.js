@@ -32,5 +32,27 @@ const features = [
   },
 ];
 
+const approuch = [
+  {
+    id: 1,
+    title: "Make Appointment",
+    desc: "You must make an appointment in advance, to choose the service and date.",
+  },
+  {
+    id: 2,
+    title: "Consultations",
+    desc: "The next stage involves a thorough consultation with an Ayurveda practitioner.",
+  },
+  {
+    id: 3,
+    title: "Treatment Planning",
+    desc: "The Ayurvedic practitioner creates a personalized treatment plan for you",
+  },
+  {
+    id: 4,
+    title: "Maintenance",
+    desc: "These visits allow for assessment of progress, adjustments to the treatment.",
+  },
+];
 
-export default features;
+export { features, approuch };

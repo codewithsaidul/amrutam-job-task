@@ -19,7 +19,7 @@ const Consultations = () => {
 
         <figure className="col-span-12 md:col-span-6 lg:col-span-4">
           <img
-            src="/public/assets/consultation/consultation1.png"
+            src="/assets/consultation/consultation1.png"
             alt="consultation1"
             className="object-cover w-full h-auto"
           />
@@ -47,7 +47,7 @@ const Consultations = () => {
 
         <figure className="col-span-12 md:col-span-6 lg:col-span-3">
           <img
-            src="/public/assets/consultation/consultation2.png"
+            src="/assets/consultation/consultation2.png"
             alt="consultation2"
             className="object-cover w-full h-auto"
           />
@@ -64,7 +64,7 @@ const Consultations = () => {
 
         <figure className="col-span-12 lg:col-span-3">
           <img
-            src="/public/assets/consultation/consultation3.png"
+            src="/assets/consultation/consultation3.png"
             alt="consultation3"
             className="object-cover w-full h-auto"
           />

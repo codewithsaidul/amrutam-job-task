@@ -14,4 +14,7 @@
     .mobile-banner {
         @apply bg-mobile-banner bg-no-repeat bg-cover bg-center z-0
     }
+    .harmony-banner {
+        @apply bg-harmony-banner bg-no-repeat bg-cover bg-center z-0
+    }
 }
